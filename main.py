@@ -6,7 +6,7 @@ def encode(password):
         if int(i) < 7:
             int_list += str(int(i) + 3)
         else:
-            int_list += ((str(int(i) + 3))[1])
+            int_list += (str(int(i) - 7))
     return int_list
 
 
