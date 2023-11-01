@@ -6,7 +6,7 @@ def encode(password):
         if int(i) < 7:
             int_list += str(int(i) + 3)
         else:
-            int_list += (str(int(i) - 7))
+            int_list += ((str(int(i) + 3))[1])
     return int_list
 
 
@@ -41,11 +41,11 @@ def main():
         print('Your password has been decoded and stored! \n')
         print(f'The decoded password is {old_password}, and the original password is {new_password}')
 
-
     elif option == '3':
         return False
 
 
 if __name__ == "__main__":
-    while True:
-        main()
+    x = True
+    while x:
+        x = main()
